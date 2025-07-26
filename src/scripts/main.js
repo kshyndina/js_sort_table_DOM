@@ -21,7 +21,9 @@ const sorting = (x) => {
 
     case 3:
       return rows.sort((a, b) => {
-        return +a.children[2].innerText - Number(b.children[2].innerText);
+        return (
+          Number(a.children[2].innerText) - Number(b.children[2].innerText)
+        );
       });
 
     case 4:
